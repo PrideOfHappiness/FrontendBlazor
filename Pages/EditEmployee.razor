@@ -1,0 +1,41 @@
+@page "/editemployee" 
+
+<EditForm Model="@Employee">
+    <h3> Edit Employee </h3>
+    <hr/>
+    <div class="form-group row"> 
+        <label for="firstName" class="col-sm-2 col-form-label"> First name</label>
+        <div class="col-sm-10">
+            <InputText id="firstName" class="form-control" placeholder="First Name" @bind-Value="@Employee.firstName" />
+        </div>     
+    </div>
+    <div class="form-group row"> 
+        <label for="lastName" class="col-sm-2 col-form-label"> last name</label>
+        <div class="col-sm-10">
+            <InputText id="firstName" class="form-control" placeholder="last Name" @bind-Value="@Employee.lastName" />
+        </div>     
+    </div>
+    <div class="form-group row"> 
+        <label for="email" class="col-sm-2 col-form-label"> Email</label>
+        <div class="col-sm-10">
+            <InputText id="firstName" class="form-control" placeholder="Email" @bind-Value="@Employee.email" />
+        </div>     
+    </div>
+    <div class="form-group row"> 
+           <InputSelect id="department" @bind-Value="Employee.departmentId" class="form-control"> 
+           @foreach (var dept in Departments) { 
+               <option value="@dept.DepartmentId"> @dept.DepartmentName</option>
+           }
+           </InputSelect>
+    </div>
+    <div class="form-group row">
+        <label for="gender" class="col-sm-2 col-form-label"> Gender</label>
+        <div class="col-sm-10">
+            <InputSelect id="department" @bind-Value="Employee.gender" class="form-control"> 
+           @foreach (var dept in Enum.GetValues(typeof(Gender))) { 
+               <option value="@dept.DepartmentId"> @dept.DepartmentName</option>
+           }
+           </InputSelect>
+        </div>  
+    </div>
+</EditForm>

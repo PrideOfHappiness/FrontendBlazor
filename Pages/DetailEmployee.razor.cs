@@ -16,6 +16,8 @@ namespace UTSBlazor.Pages {
 
         [Inject]
         public EmployeeServices EmployeeService { get; set; }
+        public DepartmentService DepartmentService { get; set;} 
+        public List<Department>  Departments { get; set; } = new List<Department>();
 
         public string Coordinates { get; set;}
         public String ButtonText { get; set;} = "Hide Footer";
@@ -40,6 +42,8 @@ namespace UTSBlazor.Pages {
         {
             id = id ?? "1";
             Employee = await EmployeeService.GetById(Convert.ToInt32(id));
+            Departments = (await DepartmentService.GetAll()).ToList();
+
         }
     }
 }

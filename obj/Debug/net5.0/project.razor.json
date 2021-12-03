@@ -279,6 +279,59 @@
         }
       },
       {
+        "HashCode": 958957419,
+        "Kind": "Components.Component",
+        "Name": "UTSBlazor.Pages.EditEmployee",
+        "AssemblyName": "UTSBlazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EditEmployee"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "UTSBlazor.Pages.EditEmployee"
+        }
+      },
+      {
+        "HashCode": -690102819,
+        "Kind": "Components.Component",
+        "Name": "UTSBlazor.Pages.EditEmployee",
+        "AssemblyName": "UTSBlazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "UTSBlazor.Pages.EditEmployee"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "UTSBlazor.Pages.EditEmployee",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -1191559491,
         "Kind": "Components.Component",
         "Name": "UTSBlazor.App",
@@ -13198,6 +13251,11 @@
     {
       "FilePath": "d:\\Codes\\frontend_blazor\\UTSBlazor\\App.razor",
       "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "d:\\Codes\\frontend_blazor\\UTSBlazor\\Pages\\EditEmployee.razor",
+      "TargetPath": "Pages\\EditEmployee.razor",
       "FileKind": "component"
     },
     {
