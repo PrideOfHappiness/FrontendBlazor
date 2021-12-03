@@ -147,6 +147,59 @@
         }
       },
       {
+        "HashCode": 958957419,
+        "Kind": "Components.Component",
+        "Name": "UTSBlazor.Pages.EditEmployee",
+        "AssemblyName": "UTSBlazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EditEmployee"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "UTSBlazor.Pages.EditEmployee"
+        }
+      },
+      {
+        "HashCode": -690102819,
+        "Kind": "Components.Component",
+        "Name": "UTSBlazor.Pages.EditEmployee",
+        "AssemblyName": "UTSBlazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "UTSBlazor.Pages.EditEmployee"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "UTSBlazor.Pages.EditEmployee",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1275409977,
         "Kind": "Components.Component",
         "Name": "UTSBlazor.Pages.EmployeePage",
@@ -279,14 +332,14 @@
         }
       },
       {
-        "HashCode": 958957419,
+        "HashCode": 1582279697,
         "Kind": "Components.Component",
-        "Name": "UTSBlazor.Pages.EditEmployee",
+        "Name": "UTSBlazor.Pages.AddEmployee",
         "AssemblyName": "UTSBlazor",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "EditEmployee"
+            "TagName": "AddEmployee"
           }
         ],
         "BoundAttributes": [
@@ -301,18 +354,18 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "UTSBlazor.Pages.EditEmployee"
+          "Common.TypeName": "UTSBlazor.Pages.AddEmployee"
         }
       },
       {
-        "HashCode": -690102819,
+        "HashCode": -910757932,
         "Kind": "Components.Component",
-        "Name": "UTSBlazor.Pages.EditEmployee",
+        "Name": "UTSBlazor.Pages.AddEmployee",
         "AssemblyName": "UTSBlazor",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "UTSBlazor.Pages.EditEmployee"
+            "TagName": "UTSBlazor.Pages.AddEmployee"
           }
         ],
         "BoundAttributes": [
@@ -327,7 +380,7 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "UTSBlazor.Pages.EditEmployee",
+          "Common.TypeName": "UTSBlazor.Pages.AddEmployee",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -13266,6 +13319,11 @@
     {
       "FilePath": "d:\\Codes\\frontend_blazor\\UTSBlazor\\Shared\\NavMenu.razor",
       "TargetPath": "Shared\\NavMenu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "d:\\Codes\\frontend_blazor\\UTSBlazor\\Pages\\AddEmployee.razor",
+      "TargetPath": "Pages\\AddEmployee.razor",
       "FileKind": "component"
     },
     {

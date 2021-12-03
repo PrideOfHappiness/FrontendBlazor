@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
 using UTSBlazor.Model;
 using UTSBlazor.Services;
+using System.ComponentModel.DataAnnotations;
 
 namespace UTSBlazor.Pages {
     public partial class DetailEmployee

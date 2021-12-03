@@ -7,7 +7,7 @@ using UTSBlazor.Services;
 using Microsoft.AspNetCore.Components;
 
 namespace UTSBlazor.Pages {
-public partial class EditEmployee {
+public partial class AddEmployee {
     public Employee Employee { get; set;} = new Employee();
 
     [Inject]

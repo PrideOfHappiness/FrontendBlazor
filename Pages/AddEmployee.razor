@@ -1,4 +1,4 @@
-@page "/editemployee/{id}" 
+@page "/addemployee/" 
 
 <EditForm Model="@Employee" OnValidSubmit="handleValidSubmit">
     <h3> Edit Employee </h3>
@@ -6,28 +6,28 @@
     <div class="form-group row"> 
         <label for="firstName" class="col-sm-2 col-form-label"> First name</label>
         <div class="col-sm-10">
-            <InputText id="firstName" class="form-control" placeholder="First Name" @bind-Value="@Employee.firstName" />
+            <InputText id="firstName" class="form-control" placeholder="First Name" />
             <ValidationMessage For="@(()=>Employee.firstName)" />
         </div>     
     </div>
     <div class="form-group row"> 
         <label for="lastName" class="col-sm-2 col-form-label"> last name</label>
         <div class="col-sm-10">
-            <InputText id="firstName" class="form-control" placeholder="last Name" @bind-Value="@Employee.lastName" />
+            <InputText id="firstName" class="form-control" placeholder="last Name" />
             <ValidationMessage For="@(()=>Employee.lastName)" />
         </div>     
     </div>
     <div class="form-group row"> 
         <label for="email" class="col-sm-2 col-form-label"> Email</label>
         <div class="col-sm-10">
-            <InputText id="firstName" class="form-control" placeholder="Email" @bind-Value="@Employee.email" />
+            <InputText id="firstName" class="form-control" placeholder="Email" />
             <ValidationMessage For="@(()=>Employee.email)" />
         </div>     
     </div>
     <div class="form-group row"> 
         <label for="confirmEmail" class="col-sm-2 col-form-label"> Confirm Email</label>
         <div class="col-sm-10">
-            <InputText id="confirmEmail" class="form-control" placeholder="Email" @bind-Value="@Employee.confirmEmail" />
+            <InputText id="confirmEmail" class="form-control" placeholder="Email" />
             <ValidationMessage For="@(()=>Employee.confirmEmail)" />
         </div>     
     </div>
