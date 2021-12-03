@@ -1,11 +1,28 @@
 @page "/employeedetail/{id}"
 
-<h3> Detail Karyawan @Employee.firstName . @Employee.lastName </h3>
 
-<p> ID : @Employee.employeeId</p>
-<p> Nama : @Employee.firstName  @Employee.lastName</p>
-<p> Email Karyawan : @Employee.email</p>
-<p> Tanggal Lahir : @Employee.dateOfBirth</p>
-<p> Gender : @Employee.gender</p>
-<p> ID Departemen Karyawan : @Employee.departmentId</p>
-<p> Nama Departemen Karyawan : @Employee.departmentName</p>
+@if(Employee == null || Employee.Department==null) {
+    <div class="spinner"> </div>
+}
+else{ 
+    <div class=""row justify-content-center m-3">
+        <div class="col-sm-8">
+            <h1> @Employee.firstName @Employee.lastName</h1>
+        </div>
+        <div class="card-body text-center">
+            <img class="card-img-top" src="@Employee.PhotoPath" 
+            @onmousemove="@Mouse_Move" />
+            <h4> @Coordinates</h4>
+            <h4> Employee ID : @Employee.employeeId</h4>
+            <h4> Email : @Employee.email</h4>
+            <h4> Department : @Employee.departmentId.DepartmentName</h4>
+        </div>
+        <button class="btn btn-primary" @onclick="@Button_Click">@ButtonText</button>
+        <div class="card-footer text-center" @CssClass> 
+            <a href="/" class="btn btn-primary"> Back to Employee</a>
+            <a href="/" class="btn btn-success"> Edit Data</a>
+            <a href="/" class="btn btn-danger"> Delete Data</a>
+        </div>
+        
+    </div>
+}
